@@ -13,8 +13,25 @@
 </template>
 
 <script>
+import {mapGetters, mapActions} from "vuex";
+import api from '@/api';
+
 export default {
   name: "Pantry",
+  data() {
+    return {
+    }
+  },
+  computed: {
+    ...mapGetters("pantry", ["categories"]),
+  },
+  created() {
+    // this.initialize();
+    api.get("/categories")
+  },
+  methods: {
+    ...mapActions("pantry", ["initialize"])
+  }
 };
 </script>
 <style scoped>
