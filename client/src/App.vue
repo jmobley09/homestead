@@ -1,8 +1,8 @@
 <template>
-  <div flex>
-    <NavDrawer></NavDrawer>
-    <router-view class="view"></router-view>
-  </div>
+<div>
+  <NavDrawer></NavDrawer>
+  <router-view class="view"></router-view>
+</div>
 </template>
 
 <script setup>
