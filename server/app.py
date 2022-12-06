@@ -1,12 +1,13 @@
 from fastapi import FastAPI
 from sql import models
 from sql.database import engine
-from routers import categories
+from routers import categories, items
 
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 app.include_router(categories.router)
+app.include_router(items.router)
 
 @app.get("/")
 async def root():

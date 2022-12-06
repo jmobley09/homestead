@@ -6,6 +6,8 @@ from pydantic import BaseModel
 class ItemBase(BaseModel):
     name: str
     description: Union[str, None] = None
+    quantity: int = None
+
 
 
 class ItemCreate(ItemBase):

@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.orm import Session
 from sql.database import SessionLocal
 from sql import schemas
-from dependencies import categories_crud
+from dependencies import categories_crud, items_crud
 
 router = APIRouter(
     prefix="/categories",
@@ -37,8 +37,9 @@ def read_category(category_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Category not found")
     return db_category
 
+# route for creating items associated with a category
 @router.post("/{category_id}/items/", response_model=schemas.Item)
 def create_item_for_category(
     category_id: int, item: schemas.ItemCreate, db: Session = Depends(get_db)
 ):
-    return categories_crud.create_category_item(db=db, item=item, category_id=category_id)
+    return items_crud.create_item(db=db, item=item, category_id=category_id)
