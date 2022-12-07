@@ -4,7 +4,7 @@ import Footer from "./components/Footer.vue";
 </script>
 
 <template>
-  <div class="font-chinese antialiased">
+  <div>
     <div class="min-h-screen">
       <Navbar />
       <RouterView />
