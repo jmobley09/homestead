@@ -1,6 +1,3 @@
-<script setup lang="ts">
-</script>
-
 <template>
   <div
     class="text-base-content sticky top-0 z-30 flex h-16 w-full justify-center opacity-90 backdrop-blur transition-all duration-100"
@@ -22,7 +19,6 @@
         </router-link>
       </div>
       <div>
-        <ThemeChange />
         <span
           class="tooltip tooltip-bottom before:text-xs before:content-[attr(data-tip)]"
           data-tip="GitHub"
@@ -52,3 +48,5 @@
     </nav>
   </div>
 </template>
+<script setup lang="ts">
+</script>

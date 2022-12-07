@@ -1,6 +1,3 @@
-<script setup lang="ts">
-</script>
-
 <template>
   <footer
     class="footer footer-center border-base-100 bg-base-200 text-base-content sticky bottom-0 border-t px-4 pt-2 opacity-90"
@@ -20,3 +17,7 @@
     </div>
   </footer>
 </template>
+
+<script setup lang="ts">
+</script>
+
