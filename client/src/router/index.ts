@@ -23,6 +23,16 @@ const routes: RouteRecordRaw[] = [
     component: () => import("~/views/home/components/StoreTest.vue"),
   },
   {
+    path: "/pantry",
+    name: "Pantry",
+    component: () => import("~/views/Pantry.vue"),
+  },
+  {
+    path: "/shopping-list",
+    name: "ShoppingList",
+    component: () => import("~/views/ShoppingList.vue"),
+  },
+  {
     path: "/:pathMatch(.*)*",
     redirect: "/404",
   },
