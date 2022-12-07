@@ -1,16 +1,14 @@
-<template>
-<div>
-  <NavDrawer></NavDrawer>
-  <router-view class="view"></router-view>
-</div>
-</template>
-
-<script setup>
-// import HelloWorld from '@/components/HelloWorld.vue'
-import NavDrawer from "@/components/NavDrawer.vue";
+<script setup lang="ts">
+import Navbar from "./components/NavBar.vue";
+import Footer from "./components/Footer.vue";
 </script>
-<style scoped>
-.view {
-  margin-left: 300px;
-}
-</style>
+
+<template>
+  <div>
+    <div class="min-h-screen">
+      <Navbar />
+      <RouterView />
+    </div>
+    <Footer />
+  </div>
+</template>
