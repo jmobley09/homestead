@@ -26,7 +26,7 @@ export default {
     ...mapGetters("pantry", ["categories"]),
   },
   created() {
-    // this.initialize();
+    this.initialize();
     api.get("/categories")
   },
   methods: {
