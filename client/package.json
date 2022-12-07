@@ -1,16 +1,12 @@
 {
-  "name": "vite-boot",
+  "name": "homestead-app",
   "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@7.11.0",
-  "description": "Vite starter template with TailwindCSS",
+  "description": "Homestead App for Family Organization",
   "keywords": [
-    "viteBoot",
-    "vite-boot",
     "vite",
-    "tailwindcss",
-    "fast",
-    "boot"
+    "tailwindcss"
   ],
   "main": "src/main.ts",
   "scripts": {
@@ -20,7 +16,6 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "prepare": "cd .. && husky install client/.husky",
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
