@@ -1,0 +1,13 @@
+lockfileVersion: 5.4
+
+specifiers:
+  mande: ^2.0.3
+
+dependencies:
+  mande: 2.0.3
+
+packages:
+
+  /mande/2.0.3:
+    resolution: {integrity: sha512-rWIgfcpx6nlUHDOQbHu9dSYFxib3hV85lo7KnoA7T+uBRLiSM6dy00M/+NABNkDCVgJNcm8Ib4nobLfERhrvxA==}
+    dev: false

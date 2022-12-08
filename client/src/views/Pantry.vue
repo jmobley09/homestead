@@ -15,4 +15,13 @@
     </div>
 </template>
 <script setup lang="ts">
+import { usePantryStore } from '~/store/pantry';
+import { onMounted } from 'vue';
+
+const store = usePantryStore();
+
+onMounted(() => {
+    store.fetchCategories();
+    console.log(store.data);
+})
 </script>

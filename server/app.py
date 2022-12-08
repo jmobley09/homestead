@@ -6,7 +6,8 @@ from routers import categories, items
 
 origins = [
     "http://localhost",
-    "http://localhost:3000",
+    "http://localhost:8888",
+    "http://127.0.0.1:8888"
 ]
 
 models.Base.metadata.create_all(bind=engine)
